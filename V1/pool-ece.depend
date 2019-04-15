@@ -1,4 +1,37 @@
 # depslib dependency file v1.0
-1555333289 source:c:\users\hp\desktop\pool-ece\v1\main.cpp
+1555335697 source:c:\users\hp\desktop\pool-ece\v1\main.cpp
 	<iostream>
+	"graphe.h"
+
+1555333186 c:\users\hp\desktop\pool-ece\v1\graphe.h
+	<string>
+	<unordered_map>
+	"sommet.h"
+
+1555335835 c:\users\hp\desktop\pool-ece\v1\sommet.h
+	<string>
+	<vector>
+	<queue>
+	<stack>
+	<unordered_map>
+	<map>
+	<unordered_set>
+	<fstream>
+	<iostream>
+	"arrete.h"
+
+1555335761 source:c:\users\hp\desktop\pool-ece\v1\arrete.cpp
+	"arrete.h"
+
+1555335845 c:\users\hp\desktop\pool-ece\v1\arrete.h
+	<string>
+	<vector>
+	<queue>
+	<stack>
+	<unordered_map>
+	<map>
+	<unordered_set>
+	<fstream>
+	<iostream>
+	"sommet.h"
 

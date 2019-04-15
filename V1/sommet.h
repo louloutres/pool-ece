@@ -1,6 +1,14 @@
 #ifndef SOMMET_H_INCLUDED
 #define SOMMET_H_INCLUDED
-
+#include <string>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <unordered_map>
+#include <map>
+#include <unordered_set>
+#include <fstream>
+#include <iostream>
 #include "arrete.h"
 
 class Sommet
@@ -30,7 +38,6 @@ class Sommet
     private:
         /// Voisinage : liste d'adjacence
         std::vector<const Sommet*> m_voisins;
-        /// réseau d'arretes
 
         /// Données spécifiques du sommet
         std::string m_id; // Identifiant

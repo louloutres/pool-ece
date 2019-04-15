@@ -1,8 +1,7 @@
-#include "arrete.h"
-/*
-Arrete::Arrete(std::string id,float poids1,float poids2,std::string id1,std::string id2):m_id{id},m_poids1{x},m_poids2{y},m_id1{id1},m_id2{id2}
-{
+#include "graphe.h"
 
+graphe::graphe(std::string nomFichier)
+{
     std::ifstream ifs{nomFichier};
     if (!ifs)
         throw std::runtime_error( "Impossible d'ouvrir en lecture " + nomFichier );
@@ -36,10 +35,53 @@ Arrete::Arrete(std::string id,float poids1,float poids2,std::string id1,std::str
         ifs>>id_voisin; if(ifs.fail()) throw std::runtime_error("Probleme lecture arete sommet 2");
         ifs>>ponderation; if(ifs.fail()) throw std::runtime_error("Probleme lecture ponderation");
         //ajouter chaque extrémité à la liste des voisins de l'autre (graphe non orienté)
-        (m_sommets.find(id))->second->ajouterVoisin((m_sommets.find(id_voisin))->second,ponderation);
+//        (m_sommets.find(id))->second->ajouterVoisin((m_sommets.find(id_voisin))->second,ponderation);
     }
 }
-    m_bouts.insert({m_id1,m_id2})
-    m_poids.insert({m_poids1,m_poids2)
+
+void graphe::afficher() const
+{
+    std::cout<<"graphe : "<<std::endl
+             <<"  ordre : "<<m_sommets.size()<<std::endl;
+    for (auto& it : m_sommets)
+    {
+        std::cout<<"  sommet :";
+        it.second->afficherData();
+        std::cout<<std::endl;
+        it.second->afficherVoisins();
+        std::cout<<std::endl;
+    }
+}
+
+graphe::~graphe()
+{}
+
+/*std::map<int,std::string> graphe::Dijkstra() const
+{
+    std::map<int,std::string> chemin;
+
 }
 */
+void affichageChemin(const std::map<int,std::string> & chemin)
+{
+    for (auto it = --chemin.end(); it != --chemin.begin(); --it)
+    {
+        std::cout<<" "<<it->second;
+        if (it!= chemin.begin())
+        {
+            std::cout<<"<--";
+        }
+    }
+    std::cout<<": longueur ";
+    int somme=0;
+    for (auto it = --chemin.end(); it != --chemin.begin(); --it)
+    {
+        somme+=it->first;
+        std::cout<<it->first;
+        if (it!= chemin.begin())
+        {
+            std::cout<<"+";
+        }
+    }
+    std::cout<<"="<<somme;
+}

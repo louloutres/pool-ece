@@ -24,7 +24,7 @@ private:
     std::unordered_map<float,float>m_poids;
     std::unordered_map<std::string,std::string>m_bouts;
     std::string m_id;
-    std::unordered_map<std::string,Sommet*> m_sommet;
+//    std::unordered_map<std::string,Sommet*> m_sommet;
 };
 
 
