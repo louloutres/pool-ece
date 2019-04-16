@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1551644056 source:d:\cours\tg\sujetstp\tp2\tp2\main.cpp
+	<iostream>
+	"graphe.h"
+
+1551643974 source:d:\cours\tg\sujetstp\tp2\tp2\sommet.cpp
+	<iostream>
+	<queue>
+	<stack>
+	<unordered_map>
+	<unordered_set>
+	"sommet.h"
+
+1551643975 d:\cours\tg\sujetstp\tp2\tp2\sommet.h
+	<string>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+
+1551643974 source:d:\cours\tg\sujetstp\tp2\tp2\graphe.cpp
+	<fstream>
+	<iostream>
+	"graphe.h"
+
+1551643974 d:\cours\tg\sujetstp\tp2\tp2\graphe.h
+	<string>
+	<unordered_map>
+	"sommet.h"
+
+1555404268 source:c:\users\hp\desktop\tp2\graphe.cpp
+	<fstream>
+	<iostream>
+	"graphe.h"
+
+1555403732 c:\users\hp\desktop\tp2\graphe.h
+	<string>
+	<unordered_map>
+	"sommet.h"
+	"arete.h"
+
+1555404159 c:\users\hp\desktop\tp2\sommet.h
+	<string>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+
+1551647658 source:c:\users\hp\desktop\tp2\main.cpp
+	<iostream>
+	"graphe.h"
+
+1555404031 source:c:\users\hp\desktop\tp2\sommet.cpp
+	<iostream>
+	<queue>
+	<stack>
+	<unordered_map>
+	<unordered_set>
+	"sommet.h"
+
+1555404256 c:\users\hp\desktop\tp2\arete.h
+	<string>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+	"sommet.h"
+
+1555404256 source:c:\users\hp\desktop\tp2\arete.cpp
+	"arete.h"
+
+1555407924 source:c:\users\hp\desktop\pool-ece\v1.2\arete.cpp
+	"arete.h"
+
+1555407903 c:\users\hp\desktop\pool-ece\v1.2\arete.h
+	<string>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+	"sommet.h"
+
+1555404159 c:\users\hp\desktop\pool-ece\v1.2\sommet.h
+	<string>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+
+1555405935 source:c:\users\hp\desktop\pool-ece\v1.2\graphe.cpp
+	<fstream>
+	<iostream>
+	"graphe.h"
+
+1555405622 c:\users\hp\desktop\pool-ece\v1.2\graphe.h
+	<string>
+	<unordered_map>
+	"sommet.h"
+	"arete.h"
+
+1555404031 source:c:\users\hp\desktop\pool-ece\v1.2\sommet.cpp
+	<iostream>
+	<queue>
+	<stack>
+	<unordered_map>
+	<unordered_set>
+	"sommet.h"
+
+1555405935 source:c:\users\hp\desktop\pool-ece\v1.2\main.cpp
+	<iostream>
+	"graphe.h"
+
